@@ -1,0 +1,12 @@
+body {
+  font: 100% "Open Sans", helvetica, sans-serif;
+  font-weight: 300; }
+  body #container {
+    padding: 20px; }
+    body #container #albhed-textbox {
+      float: left; }
+    body #container #english-textbox {
+      float: right; }
+    body #container label {
+      text-align: center;
+      display: block; }

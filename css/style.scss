@@ -1,0 +1,20 @@
+$font-stack: "Open Sans", helvetica, sans-serif;
+//$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  font-weight: 300;
+  #container {
+    padding: 20px;
+    #albhed-textbox {
+      float: left;
+    }
+    #english-textbox {
+      float: right;
+    }
+    label {
+      text-align: center;
+      display: block;
+    }
+  }
+}

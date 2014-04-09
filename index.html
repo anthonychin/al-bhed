@@ -2,15 +2,21 @@
 <html>
 <head>
 	<title>Translate Me - Al Bhed</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
   <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>  
 	<script type="text/javascript" src="js/translate.js"></script>
 </head>
 <body>
 	<h1>Rikku presents ~ Translate Me - Al Bhed</h1>
-	<p>Al Bhed</p>
-	<textarea rows="5" cols="50" id="albhed" onkeyup="albhedToEnglish()" autofocus></textarea>
-	<p>English</p>
-	<textarea rows="5" cols="50" id="english" onkeyup="englishToAlbhed()"></textarea>
+  <div id="container">
+    <div id="albhed-textbox">
+  	 <label>Al Bhed</label>
+  	 <textarea rows="5" cols="50" id="albhed" onkeyup="albhedToEnglish()" autofocus></textarea>
+    </div>
+    <div id="english-textbox">
+  	 <label>English</label>
+  	 <textarea rows="5" cols="50" id="english" onkeyup="englishToAlbhed()"></textarea>
+    </div>
+  </div>
 </body>
 </html>
