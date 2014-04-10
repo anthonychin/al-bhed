@@ -45,6 +45,13 @@ function translate (text, order) {
   var txt = "";
   var skip;
   for (var i = 0; i < text.length; i++) {
+    if (text[i] === '[') {
+      skip = true;
+    }
+    if (text[i] === ']') {
+      skip = false;
+    }
+
     if (skip) {
       txt = txt + text[i];
     } else if (text[i].search(/[a-z]/) != -1) {
@@ -60,12 +67,6 @@ function translate (text, order) {
         txt = txt + letter.getKey(text[i]);
       }
     } else {
-      if (text[i] === '[') {
-        skip = true;
-      }
-      if (text[i] === ']') {
-        skip = false;
-      }
       txt = txt + text[i]
     }
 
