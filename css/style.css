@@ -1,12 +1,26 @@
+@font-face {
+  font-family: "squ721rm";
+  src: url("squ721rm.ttf"); }
+h1 {
+  text-align: center; }
+
 body {
-  font: 100% "Open Sans", helvetica, sans-serif;
+  background-image: url("final-fantasy-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  font: 100% "squ721rm";
   font-weight: 300; }
   body #container {
-    padding: 20px; }
+    padding: 25px 100px 25px 100px; }
     body #container #albhed-textbox {
       float: left; }
     body #container #english-textbox {
       float: right; }
     body #container label {
+      padding: 5px 25px 5px 25px;
       text-align: center;
       display: block; }
+
+textarea {
+  font: 90% "squ721rm";
+  background-color: transparent; }
