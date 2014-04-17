@@ -50,14 +50,10 @@ body {
 textarea {
   font: 90% "squ721rm";
   resize: none;
-  background-color: rgba(229, 228, 226, 0.3);
-  // background-color: #000000;
-  // color: #000000;
+  background-color: rgba(229, 228, 226, 0.3);;
 }
 
 textarea:focus {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  // padding: 3px 0 3px 3px;
-  // margin: 5px 1px 3px 0px;
   border: 1px solid rgpa(81, 203, 238, 1);
 }
