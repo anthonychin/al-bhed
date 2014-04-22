@@ -5,12 +5,19 @@ h1 {
   text-align: center; }
 
 body {
+  overflow: hidden;
   font: 100% "squ721rm";
   font-weight: 300; }
   body #info {
-    text-align: center; }
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    opacity: 0.8; }
   body #container {
-    padding: 25px 100px 25px 100px; }
+    padding: 25px 100px 25px 100px;
+    margin: 55px 0 0 0; }
     body #container #albhed-textbox {
       float: left; }
     body #container #english-textbox {

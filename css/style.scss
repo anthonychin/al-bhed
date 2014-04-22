@@ -11,14 +11,20 @@ h1 {
 }
 
 body {
+  overflow: hidden;
   font: 100% "squ721rm";
   font-weight: 300;
   #info {
     text-align: center;
+    padding: 10px 0px 10px 0px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto; //center a div 
+    opacity: 0.8;   
   }
   #container {
     padding: 25px 100px 25px 100px;
-
+    margin: 55px 0 0 0;
     #albhed-textbox {
       float: left;
     }
