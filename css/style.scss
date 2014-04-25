@@ -1,23 +1,30 @@
 @font-face {
   font-family: "squ721rm";
-  src: url('squ721rm.ttf');
+  src: url('font/squ721rm.ttf');
 }
-$font-stack: "Open Sans", helvetica, sans-serif;
+
+$font-title: "Open Sans", sans-serif;
+$font-stack: "squ721rm", "Open Sans", helvetica, sans-serif;
 $background: url('FFX_Logo.jpg');
 $textbox-background: #E5E4E2;
-
+$white: #fff;
+$black: #000;
 h1 {
   text-align: center;
+  font: 200% $font-title;
+  font-weight: 700;
+  color: $black;
   div {
     display: inline;
-    background-color: #000;
-    color: #fff;
+    background-color: $black; //#FFD700;
+    color: $white;
   }
 }
 
 body {
+  font: #555;
   overflow: hidden;
-  font: 100% "squ721rm";
+  font: 100% $font-stack;
   font-weight: 300;
   #info {
     text-align: center;
@@ -48,6 +55,22 @@ body {
       display: block;
     }
   }
+
+  #footer {
+    font-size: 80%;
+    position: fixed;
+    bottom: 0;
+    color: $white;
+    background-color: $black;
+    a {
+      color: $white;      
+      text-decoration: none;
+    }
+    a:hover{
+      color: $white;
+      text-decoration: underline;
+    }
+  }
 }
 
 #background {
@@ -73,29 +96,29 @@ textarea {
   resize: none;
   background-color: rgba(229, 228, 226, 0.25);
   opacity: 0.9;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(81, 203, 238, 0.7);
   @include border-radius(10px);
 }
 
 textarea:focus {
   outline: none;
   box-shadow: inset 0 0 10px rgba(81, 203, 238, 1);
-  border: 1px solid rgba(81, 203, 238, 0.5);
+  border: 1px solid rgba(81, 203, 238, 1);
 }
 
 @keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 0.8; }
+    to   { opacity: 1; }
 }
 
 /* Firefox */
 @-moz-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 0.8; }
+    to   { opacity: 1; }
 }
 
 /* Safari and Chrome */
 @-webkit-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 0.8; }
+    to   { opacity: 1; }
 }
