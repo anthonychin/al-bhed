@@ -1,3 +1,3 @@
 al-bhed
 =======
-https://albhed.anthonychin.netne.net
+http://albhed.anthonychin.netne.net
